@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./client.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="./output.css" />
+    <title>Document</title>
+  </head>
+  <body class="box-border">
+    <!-- navigationbar -->
+    <header
+      class="h-screen min-w-80 md:h-[600px] w-full relative bg-[url(../imgIS/Docthumb.png)]"
+      style="
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      "
+    >
+      <nav class="">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/011/098/092/small/hospital-clinic-building-3d-icon-illustration-png.png"
+              class="h-8"
+              alt=" Logo"
+            />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >Hospital</span
+            >
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover: dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover: dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover: dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover: dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover: dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- details words -->
+      <section class="mt-[100px] grid sm:grid-cols-1 md:grid-cols-3 p-4">
+        <div class="grid col-start-1 pl-5 col-span-2 text-black">
+          <p class="font-bold text-5xl">약을 사오세요</p>
+          <p class="font-bold text-4xl">연중무휴 24시간 배송</p>
+          <p
+            class="w-[290px] p-2 sm:w-[500px] text-black line-clamp-3 font-['KontumruyFont'] leading-9"
+          >
+            아시아 최초 국제의료병원의 헬로국제공동위원회(jci) 안녕하세요
+          </p>
+          <div class="flex -space-x-4 rtl:space-x-reverse">
+            <img
+              class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+              src="https://www.prepareforcanada.com/wp-content/uploads/1-FeaturedImg.jpg"
+              alt=""
+            />
+            <img
+              class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+              src="https://lh4.googleusercontent.com/proxy/VDAnBP4l7lbyLnT93sa5BKuQ5gchaHqUUFned6Sx09_I86MJhe6IcFIE6-w30OFhPb02qwu8bCTQgOIwoPcTymHY4xBgV6YYCdwhyecwxG_UwnChjYI8OkrwA55Fdg"
+              alt=""
+            />
+            <img
+              class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+              src="https://familydoctor.org/wp-content/uploads/2018/02/41808433_l.jpg"
+              alt=""
+            />
+            <a
+              class="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800"
+              href="#"
+              >+99</a
+            >
+          </div>
+          <!-- button -->
+          <button
+            type="button"
+            class="text-white mt-4 w-[150px] bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            <svg
+              class="w-3.5 h-3.5 me-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 18 21"
+            >
+              <path
+                d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"
+              />
+            </svg>
+            Discuss now
+          </button>
+        </div>
+      </section>
+    </header>
+    <!-- main -->
+    <main class="max-w-screen-2xl min-w-80 mx-auto">
+      <!-- gallerry -->
+      <section class="mt-10 px-[40px]"></section>
+      <!-- content1-->
+      <section class="mt-10 px-[40px]">
+        <div class="grid gap-3 grid-cols-1 md:grid-cols-3">
+          <div class="col-span-2 bg-gray-100 p-4">
+            <p class="text-5xl font-['KontumruyFont']">회사 소개</p>
+            <p
+              class="leading-10 line-clamp-2 md:line-clamp-none p-3 font-['KontumruyFont'] font-semibold"
+            >
+              우리는 최첨단 기술을 활용하고 전문 네트워크를 효과적으로 관리하여
+              국제적으로 인정받는 의료 서비스를 제공하는 리더가 되는 것을 목표로
+              합니다. 우리의 약. 팀은 최고의 기준과 직업 윤리를 준수하며 서비스,
+              관심 및 만족도를 지속적으로 개선하기 위해 최선을 다하고 있습니다.
+            </p>
+            <span>
+              <ul class="list-disc py-2 px-10 font-['KontumruyFont']">
+                <li>리얼 인터내셔널</li>
+                <li>자격 있는</li>
+                <li>신뢰할 수 있는 전문가</li>
+                <li>현대 기술</li>
+              </ul>
+            </span>
+          </div>
+          <div class="col-span-1 px-4">
+            <img src="../imgIS/doc2.png" alt="imgae" class="rounded-lg" />
+          </div>
+        </div>
+      </section>
+      <!-- content2 -->
+      <section class="mt-10 px-[30px]">
+        <!-- slogan -->
+        <div
+          class="bg-gray-50 mb-10 grid grid-cols-1 md:grid-cols-3 mb-4 gap-2 py-4 rounded-md font-['KontumruyFont'] leading-9"
+        >
+          <div class="flex flex-col text-gray-400 items-center">
+            <i class="fa-solid fa-thumbs-up font-bold text-4xl"></i>
+            <p>고품질</p>
+          </div>
+          <!-- icon2 -->
+          <div class="flex flex-col items-center text-gray-400">
+            <i class="fa-solid fa-hospital font-bold text-4xl"></i>
+            <p>편안한</p>
+          </div>
+          <!-- icon3 -->
+          <div class="flex flex-col items-center text-gray-400">
+            <i class="fa-solid fa-heart font-bold text-4xl"></i>
+            <p>좋은 배려</p>
+          </div>
+        </div>
+        <!-- title -->
+        <div class="line-clamp-3 font-['KontumruyFont'] leading-9">
+          <span class="text-2xl">서비스 ៖</span>
+        </div>
+        <!-- cards -->
+        <div
+          class="Showcase grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2"
+        >
+          <!-- card1 -->
+          <div
+            class="max-w-sm grid grid-flow-row row-span-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg h-[230px] object-cover"
+                class="rounded-t-lg"
+                src="../imgIS/doc4.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-5 line-clamp-3 font-['KontumruyFont'] leading-9">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  병원 환자 서비스
+                </h5>
+              </a>
+              <p
+                class="mb-3 font-normal text-gray-700 line-clamp-2 dark:text-gray-400"
+              >
+                의료 / 수술실: 수술을 위해 입원이 필요한 환자의 간호 아니면
+                의학적 치료. 집중 치료실(ICU): 중증 환자를 위한 특별 관리.
+                신생아 진료실(NICU): 특별한 관심이 필요한 신생아를 위한 세심한
+                관리
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- card2 -->
+          <div
+            class="max-w-sm grid grid-flow-row row-span-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg h-[230px] object-cover"
+                src="../imgIS/71b9b3a795cc968ac4a3082a11f7eec0photo1551190822a9333d879b1f.jpeg"
+                alt=""
+              />
+            </a>
+            <div class="p-5 line-clamp-3 font-['KontumruyFont'] leading-9">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  병원 환자 서비스
+                </h5>
+              </a>
+              <p
+                class="mb-3 font-normal text-gray-700 line-clamp-2 dark:text-gray-400"
+              >
+                의료 / 수술실: 수술을 위해 입원이 필요한 환자의 간호 아니면
+                의학적 치료. 집중 치료실(ICU): 중증 환자를 위한 특별 관리.
+                신생아 진료실(NICU): 특별한 관심이 필요한 신생아를 위한 세심한
+                관리
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- card3-->
+          <div
+            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg h-[230px] object-cover"
+                class="rounded-t-lg"
+                src="../imgIS/rainbow-hospitals-plans-to-launch-four-new-facilities-add-270-beds-in-h2-of-fy24.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-5 line-clamp-3 font-['KontumruyFont'] leading-9">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  병원 환자 서비스
+                </h5>
+              </a>
+              <p
+                class="mb-3 font-normal text-gray-700 line-clamp-2 dark:text-gray-400"
+              >
+                의료 / 수술실: 수술을 위해 입원이 필요한 환자의 간호 아니면
+                의학적 치료. 집중 치료실(ICU): 중증 환자를 위한 특별 관리.
+                신생아 진료실(NICU): 특별한 관심이 필요한 신생아를 위한 세심한
+                관리
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- card4 -->
+          <div
+            class="max-w-sm grid grid-flow-row row-span-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg h-[230px] object-cover"
+                src="../imgIS/71b9b3a795cc968ac4a3082a11f7eec0photo1551190822a9333d879b1f.jpeg"
+                alt=""
+              />
+            </a>
+            <div class="p-5 line-clamp-3 font-['KontumruyFont'] leading-9">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  병원 환자 서비스
+                </h5>
+              </a>
+              <p
+                class="mb-3 font-normal text-gray-700 line-clamp-2 dark:text-gray-400"
+              >
+                의료 / 수술실: 수술을 위해 입원이 필요한 환자의 간호 아니면
+                의학적 치료. 집중 치료실(ICU): 중증 환자를 위한 특별 관리.
+                신생아 진료실(NICU): 특별한 관심이 필요한 신생아를 위한 세심한
+                관리
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- card6-->
+          <div
+            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg h-[230px] object-cover"
+                class="rounded-t-lg"
+                src="../imgIS//rainbow-hospitals-plans-to-launch-four-new-facilities-add-270-beds-in-h2-of-fy24.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-5 line-clamp-3 font-['KontumruyFont'] leading-9">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  병원 환자 서비스
+                </h5>
+              </a>
+              <p
+                class="mb-3 font-normal text-gray-700 line-clamp-2 dark:text-gray-400"
+              >
+                의료 / 수술실: 수술을 위해 입원이 필요한 환자의 간호 아니면
+                의학적 치료. 집중 치료실(ICU): 중증 환자를 위한 특별 관리.
+                신생아 진료실(NICU): 특별한 관심이 필요한 신생아를 위한 세심한
+                관리
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contet3 -->
+      <section class="px-[40px] bg-gray-100 mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <div>
+            <img src="../imgIS/doc.webp" alt="docter team" />
+          </div>
+          <div class="flex items-center p-[50px]">
+            <p
+              class="line-clamp-3 sm:line-clamp-3 md:line-clamp-4 lg:line-clamp-none font-['KontumruyFont'] text-lg"
+            >
+              " 일반적으로
+              <span class="underline"> 치료 가능성이 가장 높음</span>
+              많은 심각한 질병은 초기에 진단되지 않으며 몇 달 동안 지속되면서
+              회복 불가능한 손상을 초래할 수 있습니다. 건강을 개선하고, 질병을
+              예방하며, 당뇨병, 고혈압, 고콜레스테롤, 신장 질환, 위암,
+              자궁경부암, 자궁암 등 다양한 질병을 조기에 발견하려면 정기적으로
+              의사의 검진을 받는 것이 중요합니다. "
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- content4 -->
+      <section class="mt-10 px-[30px]">
+        <!-- title -->
+        <div class="line-clamp-3 font-['KontumruyFont'] leading-9">
+          <span class="text-2xl"> 약 ៖</span>
+        </div>
+        <!-- cards -->
+        <div
+          class="Showcase grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2"
+        >
+          <!-- card1 -->
+          <div
+            class="max-w-sm grid grid-flow-row row-span-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg w-full h-[230px] object-cover"
+                src="../imgIS/085daa1c59e5e93fbd3da280abb6d3110fc6812a-1573x2000.jpg.webp"
+                alt=""
+              />
+            </a>
+            <div class="p-5 line-clamp-3 font-['KontumruyFont'] leading-9">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  병원에서 이용 가능
+                </h5>
+              </a>
+              <p
+                class="mb-3 font-normal text-gray-700 line-clamp-2 dark:text-gray-400"
+              >
+                통증 관리: 진통제는 만성 통증이나 수술 후 불편함을 겪는 사람들이
+                보다 편안하게 생활할 수 있도록 해줍니다. 정신 건강 지원: 정신과
+                약물은 다음과 같은 상태를 관리하는 데 도움이 됩니다. 우울증,
+                불안 및 양극성 장애 이를 통해 개인은 일상 생활에서 더 나은
+                기능을 수행할 수 있습니다.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- card2 -->
+          <div
+            class="max-w-sm grid grid-flow-row row-span-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg w-full h-[230px] object-cover"
+                src="../imgIS/3687af9d-7e14-43ee-999b-7c9f3a341b9d.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-5 line-clamp-3 font-['KontumruyFont'] leading-9">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  병원에서 이용 가능
+                </h5>
+              </a>
+              <p
+                class="mb-3 font-normal text-gray-700 line-clamp-2 dark:text-gray-400"
+              >
+                통증 관리: 진통제는 만성 통증이나 수술 후 불편함을 겪는 사람들이
+                보다 편안하게 생활할 수 있도록 해줍니다. 정신 건강 지원: 정신과
+                약물은 다음과 같은 상태를 관리하는 데 도움이 됩니다. 우울증,
+                불안 및 양극성 장애 이를 통해 개인은 일상 생활에서 더 나은
+                기능을 수행할 수 있습니다.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- card3 -->
+          <div
+            class="max-w-sm grid grid-flow-row row-span-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg w-full h-[230px] object-cover"
+                src="../imgIS/nexium-2.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-5 line-clamp-3 font-['KontumruyFont'] leading-9">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  병원에서 이용 가능
+                </h5>
+              </a>
+              <p
+                class="mb-3 font-normal text-gray-700 line-clamp-2 dark:text-gray-400"
+              >
+                통증 관리: 진통제는 만성 통증이나 수술 후 불편함을 겪는 사람들이
+                보다 편안하게 생활할 수 있도록 해줍니다. 정신 건강 지원: 정신과
+                약물은 다음과 같은 상태를 관리하는 데 도움이 됩니다. 우울증,
+                불안 및 양극성 장애 이를 통해 개인은 일상 생활에서 더 나은
+                기능을 수행할 수 있습니다.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- card4 -->
+          <div
+            class="max-w-sm grid grid-flow-row row-span-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg w-full h-[230px] object-cover"
+                src="../imgIS/Products-2.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-5 line-clamp-3 font-['KontumruyFont'] leading-9">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  병원에서 이용 가능
+                </h5>
+              </a>
+              <p
+                class="mb-3 font-normal text-gray-700 line-clamp-2 dark:text-gray-400"
+              >
+                통증 관리: 진통제는 만성 통증이나 수술 후 불편함을 겪는 사람들이
+                보다 편안하게 생활할 수 있도록 해줍니다. 정신 건강 지원: 정신과
+                약물은 다음과 같은 상태를 관리하는 데 도움이 됩니다. 우울증,
+                불안 및 양극성 장애 이를 통해 개인은 일상 생활에서 더 나은
+                기능을 수행할 수 있습니다.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer
+      class="max-w-screen-2xl min-w-80 bg-white rounded-lg shadow dark:bg-gray-900 m-4"
+    >
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="#"
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/011/098/092/small/hospital-clinic-building-3d-icon-illustration-png.png"
+              class="h-8"
+              alt=" Logo"
+            />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >Hospital</span
+            >
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+          >
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">About</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2023
+          <a href="https://flowbite.com/" class="hover:underline">Hospital™</a>.
+          All Rights Reserved.</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
